@@ -1,0 +1,11 @@
+C:\Users\Kyle\Documents\Visual Studio 2015\Projects\SendDataToIotHub\SendDataToIotHub\obj\x86\Debug\SendDataToIotHub.csprojResolveAssemblyReference.cache
+C:\Users\Kyle\Documents\Visual Studio 2015\Projects\SendDataToIotHub\SendDataToIotHub\obj\x86\Debug\App.g.i.cs
+C:\Users\Kyle\Documents\Visual Studio 2015\Projects\SendDataToIotHub\SendDataToIotHub\obj\x86\Debug\App.g.cs
+C:\Users\Kyle\Documents\Visual Studio 2015\Projects\SendDataToIotHub\SendDataToIotHub\obj\x86\Debug\MainPage.g.i.cs
+C:\Users\Kyle\Documents\Visual Studio 2015\Projects\SendDataToIotHub\SendDataToIotHub\obj\x86\Debug\MainPage.g.cs
+C:\Users\Kyle\Documents\Visual Studio 2015\Projects\SendDataToIotHub\SendDataToIotHub\obj\x86\Debug\XamlTypeInfo.g.cs
+C:\Users\Kyle\Documents\Visual Studio 2015\Projects\SendDataToIotHub\SendDataToIotHub\obj\x86\Debug\App.xaml
+C:\Users\Kyle\Documents\Visual Studio 2015\Projects\SendDataToIotHub\SendDataToIotHub\obj\x86\Debug\MainPage.xaml
+C:\Users\Kyle\Documents\Visual Studio 2015\Projects\SendDataToIotHub\SendDataToIotHub\obj\x86\Debug\App.xbf
+C:\Users\Kyle\Documents\Visual Studio 2015\Projects\SendDataToIotHub\SendDataToIotHub\obj\x86\Debug\MainPage.xbf
+C:\Users\Kyle\Documents\Visual Studio 2015\Projects\SendDataToIotHub\SendDataToIotHub\obj\x86\Debug\XamlSaveStateFile.xml
