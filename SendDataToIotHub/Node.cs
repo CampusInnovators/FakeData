@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -71,13 +71,17 @@ namespace SendDataToIotHub
 
         public Sensor getSensor(int index)
         {
+            if (index > CurrentSensor)
+            {
+                throw new System.ArgumentException("No Sensor in that index");
+            }
 
             return _sensors.ElementAt<Sensor>(index);
         }
 
         public void addSensor(Sensor sensor)
         {
-            if (_sensors.Length > MAX_SENSORS)
+            if (CurrentSensor == MAX_SENSORS - 1)
             {
                 throw new System.ArgumentException("Sensors at full capacity");
             }
@@ -88,7 +92,7 @@ namespace SendDataToIotHub
 
         public void setSensor(int index, Sensor sensor)
         {
-            if (_sensors.Length > MAX_SENSORS)
+            if (CurrentSensor == MAX_SENSORS - 1)
             {
                 throw new System.ArgumentException("Sensors at full capacity");
             }
