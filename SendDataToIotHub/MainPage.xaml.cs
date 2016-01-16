@@ -12,9 +12,9 @@ namespace SendDataToIotHub
     public sealed partial class MainPage : Page
     {
         static DeviceClient deviceClient;
-        static string iotHubUri = "KylesHub.azure-devices.net";
-        static string deviceName = "KylesPi";
-        static string deviceKey = "13FAGpxxLgpKq95L9fFPRGbuuwNNC6OCxQ57nmdbAZU=";
+        static string iotHubUri = "<HostNome>";
+        static string deviceName = "<DeviceName>";
+        static string deviceKey = "<DeviceKey>";
 
         private const int ledPin = 5;
         private const int pirPin = 6;
