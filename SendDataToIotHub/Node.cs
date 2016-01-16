@@ -76,7 +76,7 @@ namespace SendDataToIotHub
                 throw new System.ArgumentException("No Sensor in that index");
             }
 
-            return _sensors.ElementAt<Sensor>(index);
+            return _sensors[index];
         }
 
         public void addSensor(Sensor sensor)
