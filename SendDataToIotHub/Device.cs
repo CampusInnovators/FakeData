@@ -1,4 +1,4 @@
-﻿using Microsoft.Azure.Devices.Client;
+using Microsoft.Azure.Devices.Client;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -18,7 +18,7 @@ namespace SendDataToIotHub
         private string _deviceID;
         private string _deviceType;
         private Node[] _nodes = new Node[MAX_NODES];
-
+        
         private int _currentNode;
 
         public Device()
@@ -88,12 +88,17 @@ namespace SendDataToIotHub
 
         public Node getNode(int index)
         {
-            return Nodes.ElementAt<Node>(index);
+            if (index > CurrentNode)
+            {
+                throw new System.ArgumentException("No Node in that index");
+            }
+
+            return _nodes[index];
         }
 
         public void addNode(Node node)
         {
-            if(Nodes.Length > MAX_NODES)
+            if (CurrentNode == MAX_NODES - 1)
             {
                 throw new System.ArgumentException("Nodes at full capacity");
             }
@@ -104,7 +109,7 @@ namespace SendDataToIotHub
 
         public void setNode(int index, Node node)
         {
-            if (Nodes.Length > MAX_NODES)
+            if (CurrentNode == MAX_NODES - 1)
             {
                 throw new System.ArgumentException("Nodes at full capacity");
             }
@@ -122,7 +127,5 @@ namespace SendDataToIotHub
                 }
             }
         }
-        
     }
-
 }
